@@ -1,0 +1,18 @@
+{
+  "syncs": [
+    {
+      "syncName": "syncDownBrokers",
+      "syncType": "syncDown",
+      "soupName": "brokers",
+      "target": {"type":"soql", "query":"SELECT name, Title__c, Phone__c, Mobile_Phone__c, Email__c, Picture__c FROM Broker__c LIMIT 10000"},
+      "options": {"mergeMode":"OVERWRITE"}
+    },
+    {
+      "syncName": "syncUpBrokers",
+      "syncType": "syncUp",
+      "soupName": "brokers",
+      "target": {"createFieldlist":["name", "Title__c", "Phone__c", "Mobile_Phone__c", "Email__c", "Picture__c"]},
+      "options": {"fieldlist":["Id", "name", "Title__c", "Phone__c", "Mobile_Phone__c", "Email__c", "Picture__c"], "mergeMode":"LEAVE_IF_CHANGED"}
+    }
+  ]
+}

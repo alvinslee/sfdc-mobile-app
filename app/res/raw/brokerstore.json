@@ -1,0 +1,23 @@
+{
+  "soups": [
+    {
+      "soupName": "brokers",
+      "indexes": [
+        { "path": "Id", "type": "string"},
+
+        { "path": "name", "type": "string"},
+        { "path": "Title__c", "type": "string"},
+        { "path": "Phone__c", "type": "string"},
+        { "path": "Mobile_Phone__c", "type": "string"},
+        { "path": "Email__c", "type": "string"},
+        { "path": "Picture__c", "type": "string"},
+
+        { "path": "__local__", "type": "string"},
+        { "path": "__locally_created__", "type": "string"},
+        { "path": "__locally_updated__", "type": "string"},
+        { "path": "__locally_deleted__", "type": "string"},
+        { "path": "__sync_id__", "type": "integer"}
+      ]
+    }
+  ]
+}
